@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Case Generation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Test Case Generation</h1>
+    </header>
+    <main>
+        <h2>Generated Test Case</h2>
+        <p>Essay Index: {{ test_case['essay_index'] }}</p>
+        <p>Essay: {{ test_case['essay'] }}</p>
+        <p>Expected Key Phrases: {{ test_case['expected_key_phrases'] }}</p>
+        <p>Expected Sentiment: {{ test_case['expected_sentiment'] }}</p>
+        <button onclick="window.location.href='/generate_test_case'">Generate Another Test Case</button>
+    </main>
+</body>
+</html>
